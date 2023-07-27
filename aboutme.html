@@ -9,9 +9,9 @@
                 margin: 0;
                 padding: 0;
             }
-            header {
-                width: 80%;
-                background-color: white;
+            .header {
+                
+                color: white;
                 
                 
                 
@@ -26,7 +26,7 @@
             html {
                 background-color: grey;
                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                background-image: url("images/Quad.jpg");
+                background-image: url("images/redbackground.jpg");
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: 100% 100%;
@@ -36,9 +36,88 @@
                 margin-right: auto;
                 padding: 10px;
             }
+            img {
+                width: 30%;
+            } 
+            .section {
+                color: white;
+                display: flex;
+                flex-direction: row;
+                width: 80%;
+                align-items: center;
+                margin-top: 10vh;
+                margin-bottom: 10vh;
+            }
+            .text {
+                padding: 10px;
+            }
+            .left {
+                margin-right: auto;
+                margin-left: 5vw;
+            }
+            .right {
+                text-align: right;
+                margin-left: auto;
+                margin-right: 5vw;
+            }
             </style>
     </head>
-    <header>
-        <h1>About Me</h1>
-    </header>
+
+    <body>
+        <div class="header">
+            <h1>About Me</h1>
+        </div>
+        <div class="section left">
+            <img src="images/QuadPicture.jpg">
+            <div class="text">
+                <h2>Education</h2>
+                <p>Hi, I'm Gabe Zeller and I am a student at the University of Illinois Urbana-Champaign studying Geographic Information 
+                    Science with a minor in Computer Science.
+                </p>
+                <p>
+                    My favorite thing so far as a student has been learning to code in Java and C++ between various courses. I am looking forward to this fall 2023
+                    semester where I will take Data Structures in C++ and a course titled Environmental Data Science where I will learn to code in R. 
+                </p>
+                <p>
+                    My exact goals are unknown, but so far I enjoy dealing with data via code and will keep exploring this avenue. I expect to complete my degree in the Fall of 2025.
+                </p>
+            </div>
+        </div>
+
+        <div class="section right">
+            
+            <div class="text">
+                <h2>Triangle Fraternity</h2>
+                <p>Much of my time outside of academics is spent as a member of the Illinois chapter of Triangle Fraternity. 
+                    I had no intention of joining greek life when I went to college, but during the second half of my
+                    freshman year, I learned about Triangle, a fraternity of STEM majors, and found this was a unique
+                    group I wanted to be a part of.
+                </p>
+                <p>One of favorite memories was my experience as our float chair. This meant I was responsible for designing and building
+                    our float for the UIUC 2022 Homecoming parade. I went with a Stranger Things theme, hand-making a Demi-Dog from the show, and 
+                    decided to be ambitious by having a live band on the float consisting of our more musical members who played
+                    80's music from the show. Float is pictured right. 
+                    
+                </p>
+            </div>
+            <img src="images/floatcollage.JPG">
+        </div>
+
+        <div class="section left">
+            <img src="images/alleypic.JPEG">
+            <div class="text">
+                <h2>Personal</h2>
+                <p>I am a lover of live music. My favorite thing to do is go to local shows around my hometown of Peoria or in the Champaign-Urbana area. 
+                    I especially enjoy it when there is a mosh pit! In general, I enjoy most music, but my favorite is metal and hardcore. Currently, I love listening to
+                    Slipknot, Deftones, and Knocked Loose. 
+                </p>
+                <p>
+                    Ever since I began running cross country in high school, I have been into fitness. Although I am not always consistent, I do enjoy 
+                    lifting at the gym and going on runs when I make time for it. I also find nutrition very interesting. When I feel necessary, I pay close attention to what I eat in relation to my fitness goals.
+                </p>
+                <p>Some other things that I enjoy are longboarding (especially around campus), fashion, thrifting, being outdoors, the oxford comma, and learning about spirits and distilling. </p>
+            </div>
+        </div>
+        
+    </body>
     </html>
