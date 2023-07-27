@@ -9,9 +9,9 @@
                 margin: 0;
                 padding: 0;
             }
-            header {
-                width: 80%;
-                background-color: white;
+            .header {
+                
+                color: white;
                 
                 
                 
@@ -26,7 +26,7 @@
             html {
                 background-color: grey;
                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                background-image: url("images/Quad.jpg");
+                background-image: url("images/redbackground.jpg");
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: 100% 100%;
@@ -37,12 +37,13 @@
                 padding: 10px;
             }
             .project {
-                background-color: white;
+                color: white;
                 width: 80%;
+                
                 
                 margin-left: auto;
                 margin-right: auto;
-                margin-bottom: 5vh;
+                
             }
             .description {
                 padding: 10px;
@@ -67,14 +68,34 @@
                 
                 
             }
+            a:link {
+                color: gold;
+            }
+            a:visited {
+                color: gold;
+            }
+            .divider {
+                margin-left: auto;
+                margin-right: auto;
+                height: 5px;
+                background-color: white;
+                width: 80%;
+            }
+
 
         </style>
     </head>
-    <header>
-        <h1>Projects</h1>
-    </header>
+
 
     <body>
+        <div class="header">
+            
+                <h1>Projects</h1>
+                
+                
+
+        </div>
+        <div class="divider"></div>
         <div class="project">
             <div class="description">
                 <h2>Portfolio Website</h2>
@@ -96,5 +117,6 @@
                 <img src="images/codePic.png">
             </div>
         </div>
+        <div class="divider"></div>
     </body>
 </html>
