@@ -10,8 +10,9 @@
                 padding: 0;
             }
             html {
-                background-color: #2C2C2C;
-                background-image: url("images/Quad.jpg");
+                background-color: black;
+                /*background-color: #2C2C2C;*/
+                background-image: url("images/redbackground.jpg");
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: 100% 100%;
@@ -19,13 +20,14 @@
                 color: black;
                 
             }
-            header {
+            .header {
                 display: flex;
                 flex-direction: row;
                 justify-content:flex-start;
                 align-items: center;
                 
-                background-color: rgb(255, 255, 255, 1);
+               /*background-color: #2C2C2C; */
+                color: white;
                 
                 width: 80%;
                 margin-left: auto;
@@ -39,6 +41,8 @@
                 margin-right:auto;
                 margin-left: auto;
                 margin-top: auto;
+                color: white;
+                
                 
             }
             .headtext {
@@ -50,8 +54,8 @@
                 display: flex;
                 
                 align-items: center;
-                margin-left: auto;
-                margin-right: auto;
+                margin-left: auto; 
+                /* margin-right: auto; */
 
                /* border: 2px solid black */
             }
@@ -68,7 +72,7 @@
                 background-color: maroon;
                 border-style: outset;
                 border-color: black;
-                border-radius: 20px;
+                border-radius: 15px;
                 text-decoration: none;
                 cursor: pointer;
                 text-align: center;
@@ -86,7 +90,7 @@
             }
             .homepic {
                 
-                max-width: 25%;
+                max-width: 15%;
                 display: inline-block;
                 
             }
@@ -109,18 +113,59 @@
                 margin-top: 20px;
                 
             }
-            .main {
+            /*.main {
                 width: 80%;
                 background-color: rgb(255, 255, 255, .9);
+                background-color: #2C2C2C;
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: 10px;
+            } */
+            .main {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15vh;
+                margin-bottom: 15vh;
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+            }
+            .maintext {
+                text-align: right;
+                
+            }
+            .headshot {
+                width: 20vw;
+                border-radius: 15px;
+                
+                
+                
             }
             .background {
                 width:fit-content;
 
             }
-           
+            .text {
+                font-size: xx-large;
+                margin-bottom: 25px;
+            }
+            .subtext {
+                font-size: x-large;
+            }
+            .sidebar {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+            }
+           .logo {
+            width: 3vw;
+            
+           }
+           .logos {
+            margin-top: 25px;
+           }
+
 
 
         </style>
@@ -128,30 +173,53 @@
 
     </head>
     <header>
-        <img class="homepic" src="images\QuadPicture.jpg">
-        <div class="headtext">
-        <h1>Gabe Zeller</h1>
-        <p class="subheading">Geographic Information Science student at UIUC</p>
+        <!-- <img class="homepic" src="images\QuadPicture.jpg"> -->
         
-        
-        </div>
-        
-        <div class="buttons">
-            <a class="button left" href="projects.html">
-                Projects
-            </a>
-
-            <a class="button right" href="aboutme.html">
-                About Me
-            </a>
-            </div>
   
     </header>
     <body>
-        <div class="main">
+        <!-- <div class="main"> 
         
-       <embed class="resume" src="images/TestResume.pdf" />
+      <embed class="resume" src="images/TestResume.pdf" /> 
        </div>
+    -->
+        <div class="header">
+            <div class="headtext">
+                <h1>Gabe Zeller</h1>
+                <!-- <p class="subheading">Geographic Information Science student at UIUC</p> -->
+                
+                
+                </div>
+                
+                <div class="buttons">
+                    <a class="button left" href="projects.html">
+                        Projects
+                    </a>
+        
+                    <a class="button right" href="aboutme.html">
+                        About Me
+                    </a>
+                    </div>
+        </div>
+       <div class="main">
+        <div class="sidebar">
+            <div class="maintext">
+            <p class="text">Hi, I'm Gabe.</p>
+            <p class="subtext">Geographic Information Science</p>
+            <p class="subtext">Computer Science</p>
+            </div>
+        <div class="logos">
+            <a href="https://www.linkedin.com/in/gabe-zeller-987355217/"><img class="logo" src="images/linkedinicon.png"></a>
+            <a href="https://github.com/gabezeller"><img class="logo" src="images/githubicon.png"></a>
+        </div>
+        </div>
+            <div class="media">
+                <img class="headshot" src="images/me.png">
+            </div>
+       </div>
+
+       <embed class="resume" src="images/TestResume.pdf" /> 
+       
        
     </body>
 </html>
