@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            
+            body, h1, h2, a {
+                margin: 0;
+                padding: 0;
+            }
+            .header {               
+                color: white;     
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 3vh;
+                margin-top: 3vh;
+            }
+            html {
+                background-color: #1b4b4b;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-image: url("images/redbackground.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+            h1 {
+                margin-left: auto;
+                margin-right: auto;
+                padding: 10px;
+                font-size: 10vw;
+            }
+            .project {
+                color: white;
+                width: 80%;               
+                margin-left: auto;
+                margin-right: auto;              
+            }
+            .description {
+                padding: 10px;     
+            }
+            img {
+                /* display: inline;
+                width: 30vw;
+                border: 5px outset white;
+                margin-left: 2vw;
+                margin-right: 2vw;
+                margin-bottom: 2vh; */
+            }
+            .media {
+                display: flex;
+                flex-direction: row;
+                justify-content:center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            a:link {
+                color: whitesmoke;
+            }
+            a:visited {
+                color: whitesmoke;
+            }
+            .backbutton {
+                font-size: 2vw;
+                margin-left: 20px;
+                margin-top: 20px;
+                margin-bottom: 40px;
+                text-decoration: none;
+            }
+            .mySlides {display:none}
+            .w3-left, .w3-right, .w3-badge {cursor:pointer}
+            .w3-badge {height:13px;width:13px;padding:0}
+            .w3-display-container {
+            }
+            img {
+                max-width: 600px;
+                margin: auto;
+            }
+            iframe {
+                margin: auto;
+
+            }
+            .summary {
+                background-color: #5a2931;
+                border-radius: 15px;
+                padding: 10px;
+            }
+            .detail {
+
+            }
+            .sidebyside {
+                display: flex;
+                flex-direction: row;
+                
+            }
+            .side {
+                max-width: 30vw;
+            }
+            .sidetext {
+                display: flex;
+                flex-direction: column;
+                max-width: 30vw;
+                background-color: #5a2931;
+                border-radius: 15px;
+            }
+            .abovetext {
+                background-color: #5a2931;
+                border-radius: 15px;
+                margin-bottom: 10px;
+                align-self: center;
+                
+            }
+            p {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+        </style>
+    </head>
+    <div class="backbutton">
+        
+        <a class="backbutton" href="projects.html">&#8678; Back to projects</a>
+    </div>
+    <body>
+        
+        <div class="project">
+            <div class="description">
+                <div class="summary">
+                <h2>Midnight Cram Horror Game | <i>Unreal Engine, Blueprints</i></h2>
+                <ul>
+                    <li>Collaborated on developing a horror video game set in the UIUC Grainger Library using Unreal Engine.</li>
+                    <li>Programmed in-game mechanics for 7 key features such as player inventory with Unreal Engine Blueprints.</li>
+                    <li>Designed and implemented 3 in-game menus and many adaptive UI components such as inventory hot bar.</li>
+                </ul>
+                </div>
+            </div>
+
+            <div class = "detail description sidebyside">
+            <!-- <div class="w3-content w3-display-container" style="max-width:660px">
+                <img class="mySlides" src="images/homepagePic.png" style="width:100%">
+                <img class="mySlides" src="images/codePic.png" style="width:100%">
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                  <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                  <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                </div>
+            </div> -->
+                <div class = "sidetext">
+                    <p>During the Spring 2024 semester, I took CS 415, a Game Development course where I learned to use Unreal Engine and Blueprints. 
+                        For our final project, I teamed up with other ambitious students to develop a horror game set in the very place we had all taken so 
+                        many exams—the UIUC Grainger Engineering Library. Our antagonist? None other than Grainger Bob, the iconic statue that sits
+                        at the library's entrance.</p>
+                    <p>The game's objective is to locate several note pages scattered between the basement and main floor while evading Bob, conserving flashlight battery, 
+                        and solving puzzles.</p>
+                
+
+            </div>
+            <iframe width="420" height="315"
+            src="https://youtube.com/embed/Pntto975ACM">
+            </iframe>
+
+            </div>
+            <div class = "description abovetext">
+                <p>
+                    
+
+                    This project required great communication and organization from our team. We divided tasks based on interests and skill sets, utilized GitHub for version 
+                    control, and supported each other throughout the development process.</p>
+
+                 <p>   I contributed several visual elements to the game. I created the start, death, and win menus, complete with their mechanics. Additionally, I developed the 
+                    functionality for the player inventory, allowing players to switch, use, and collect items. This included designing the inventory UI and player action prompts, 
+                    such as "Press H to hide." My favorite contribution was designing a possessed computer enemy that would draw the player in and force them to convert a byte 
+                    to an integer to avoid losing the game. </p>
+
+                 <p>   Overall, this was an incredibly enjoyable project. The game demo we submitted can be viewed above.
+                </p>
+            </div>
+            </div>
+            
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " w3-white";
+            }
+        </script>
+    </body>
+</html>

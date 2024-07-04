@@ -15,7 +15,7 @@
                 background-attachment: fixed;
                 background-size: 100% 100%;
                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                color: black;
+                
                 
             }
             .header {
@@ -88,9 +88,13 @@
                 justify-content: center;
                 flex-direction: row;
                 align-items: center;
+                max-width: 50vw;
+
+
             }
             .maintext {
-                text-align: right;  
+                text-align: right; 
+                 
             }
             .headshot {
                 width: 22vw;
@@ -102,11 +106,28 @@
             }
             .subtext {
                 font-size: x-large;
+
+                overflow: hidden; /* Ensures the content is not revealed until the animation */
+                border-right: .15em solid white; /* The typwriter cursor */
+                white-space: nowrap; /* Keeps the content on a single line */
+                margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+                /* letter-spacing: .15em; Adjust as needed */
+                animation: 
+                    typing 3.5s steps(40, end),
+                    blink-caret .75s step-end infinite;
+
+
             }
+
             .sidebar {
                 display: flex;
                 flex-direction: column;
                 align-items: end;
+
+                /* backdrop-filter: blur(5px);
+                box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+                border: 2px solid rgba(255, 255, 255, 0.18);
+                border-radius: 15px; */
             }
            .logo {
             vertical-align: middle;
@@ -137,6 +158,16 @@
            .logos {
             margin-top: 25px;
            }
+           @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+            }
+
+/* The typewriter cursor effect */
+            @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: white; }
+            }
         </style>
     </head>
     <body>
@@ -160,13 +191,13 @@
         <div class="sidebar">
             <div class="maintext">
             <p class="text">Hi, I'm Gabe.</p>
+            <p class="subtext">Software Development</p>
             <p class="subtext">Geographic Information Science</p>
-            <p class="subtext">Computer Science</p>
             </div>
         <div class="logos">
             <a href="https://www.linkedin.com/in/gabe-zeller-987355217/"><img class="logo" src="images/linkedinicon.png"></a>
             <a href="https://github.com/gabezeller"><img class="logo" src="images/githubicon.png"></a>
-            <a class="resumeicon" href="images/Gabe_Zeller_Resume_Fall2023.pdf">
+            <a class="resumeicon" href="images/GabeZeller_Resume.pdf">
                 <b>Resume</b>
             </a>
         </div>
