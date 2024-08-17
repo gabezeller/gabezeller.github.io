@@ -11,13 +11,17 @@
             body, h1, h2, a {
                 margin: 0;
                 padding: 0;
+                color: white;
             }
-            .header {              
-                color: white; 
+            body {
+                
+            }
+            .header {               
+                color: white;     
                 text-align: center;
                 margin-left: auto;
                 margin-right: auto;
-                margin-bottom: 3vh;
+                /* margin-bottom: 3vh; */
                 margin-top: 3vh;
             }
             html {
@@ -29,9 +33,12 @@
                 background-size: 100% 100%;
             }
             h1 {
+                
                 margin-left: auto;
                 margin-right: auto;
-                padding: 10px;
+                
+                font-size: 10vw;
+            
             }
             img {
                 width: 30%;
@@ -39,11 +46,24 @@
             .section {
                 color: white;
                 display: flex;
-                flex-direction: row;
-                width: 80%;
-                align-items: center;
+                flex-direction: column;
+                width: 350px;
+                margin-left: 40px;
+                margin-bottom: 40px;
+                
+                
+                /* width: 80%; */
+                /* align-items: center;
                 margin-top: 10vh;
-                margin-bottom: 10vh;
+                margin-bottom: 10vh; */
+                /* margin-left: auto;
+                margin-right: auto; */
+            }
+            .bio {
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 5vh;
+                width: 60%;
             }
             .text {
                 padding: 10px;
@@ -58,7 +78,7 @@
                 margin-right: 5vw;
             }
             p {
-                background-color: rgba(0, 0, 0, 0.8);
+                /* background-color: rgba(0, 0, 0, 0.8); */
             }
             .divider {
                 margin-left: auto;
@@ -80,11 +100,11 @@
 
             }            
             a:link {
-                color: gold;
+                color: whitesmoke;
             }
             a:visited {
-                color: gold;
-            } 
+                color: whitesmoke;            
+            }
             .music {
                 
                 padding: 0 0;
@@ -110,16 +130,122 @@
                 padding: 5px;
                 border-left: solid white 2px;
             }
+            .main {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                max-width: 80%;
+                margin: auto;
+            }
+            li {
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+                
+            }
+            ul {
+                
+                /* padding-inline-start: 1; */
+                padding: 0;
+                padding-left: 12px;
+            }
+            .backbutton {
+                font-size: 2vw;
+                margin-left: 20px;
+                margin-top: 20px;
+                margin-bottom: 40px;
+                text-decoration: none;
+            }
 
        </style>
     </head>
 
     <body>
+        <div class="backbutton">
+            <a class="backbutton" href="index.html">&#8678; Back to Home</a>
+        </div>
         <div class="header">
             <h1>About Me</h1>
         </div>
-        <div class="divider"></div>
-        <div class="section left">
+        <!-- <div class="divider"></div> -->
+        <div class = "bio">
+            <p>Hi, I'm Gabe Zeller, a Senior STEM student with software development project experience, an academic background in 
+                Computer Science and Geographic Information Science, and leadership experience as a 2-time elected executive board member
+                of a STEM Fraternity.
+            </p>
+        </div>
+        <div class = "main">
+            <div class = "section">
+                <h2>Education</h2>
+                <p>I am a current Senior at the University of Illinois Urbana-Champaign pursuing a 
+                    degree in Geographic Information Science with a minor in Computer Science.
+                </p>
+
+                <!-- <p>In my coursework I have learned about GIS fundamentals and technologies, </p> -->
+                <!-- <p>In my coursework I have learned about GIS fundamentals and technologies, 
+                    My passion lies in problem solving. This is why I love programming in my coursework whether it's C++ for
+                    computer science or R for environmental data science. I am looking forward to this Spring semester where
+                    I will learn more GIS fundamentals and take a Game Development course, where I will learn to build
+                    video games using the Unreal Engine. 
+                </p> -->
+                <p>Relevant Coursework</p>
+                <ul>
+                    <li>CS374 - Intro to Algorithms and Models of Computation *in progress</li>
+                    <li>GGIS479 - Enterprise GIS *in progress</li>
+                    <li>CS225 - Data Structures and Algorithms (C++)</li>
+                    <li>CS415 - Game Development (Unreal Engine)</li>
+                    <li>GGIS224 - Environment Data Science (R)</li>
+                    <li>GGIS379 - Intro to Geographic Information Systems</li>
+                    
+                </ul>
+                <!-- <p>
+                    While my precise career goals are yet to be defined, I find satisfaction in working
+                     with data through programming and plan to further explore this area. I'm on track to complete my degree in the Fall of 2025.
+                </p> -->
+            </div>
+
+            <div class = "section">
+                    <h2>Extracurricular</h2>
+                    <h3>Triangle Fraternity</h3>
+                    <p>I actively participate in the Illinois chapter of Triangle Fraternity, a 
+                        unique organization that brings together STEM majors. I have held numerous positions in the Chapter, but most notably 
+                        I am in my second term as Social Director, an elected executive board position responsible for planning social events
+                        for the chapter.
+                    </p>
+                    <p>Serving as Social Director is fun, but I take pride in ensuring the chapter's success as an executive board member, leading
+                        7 social chairs, and creating new funs events for our chapter. 
+                    </p>
+                    <!-- <p> I have held numerous positions in the house including Float chair, where I tapped into my creativity to design and 
+                        build our float for the UIUC 2022 Homecoming parade, which featured a Stranger Things theme and a live band with music
+                        from the show. I have also served as Homecoming chair which put me in charge of planning and executing all homecoming 
+                        weekend events for our alumni and active members to enjoy. 
+                    </p>
+    
+                    <p>
+                        This coming Spring semester I will serve as Social Director, an executive board member responsible for planning and 
+                        executing all social events for the chapter. I am excited to try some new innovative things the chapter hasn't done before
+                        and hopefully plan one of the most fun semesters my brothers have seen. 
+                        
+                    </p> -->
+                    <h3>Project Code</h3>
+                    <p>I am a software development team member of a project I found through Project Code, an organization that
+                        helps bring together students for various coding projects. We are developing a mobile application that 
+                        showcases events around the UIUC campus. More detailed project info can be found <a href = "happenings.html">here.</a>
+                    </p>
+            </div>
+
+            <div class = "section"> 
+                <h2>Personal</h2>
+                <p>I am a lover of live music, and I frequently attend local shows both in my hometown of Peoria and in the Champaign-Urbana area.
+                    I especially enjoy it when there is a mosh pit! In general, I enjoy most music, but my favorite is metal and hardcore. 
+                    Currently, I love listening to
+                    Slipknot, Deftones, Knocked Loose, and Lorna Shore. 
+                </p>
+
+                <p>In addition to my love for music, I also find joy in longboarding, especially around campus, exploring 
+                    fashion through thrifting, spending time outdoors, and playing pool &#8212 even though I am not very good.</p>
+            </div>
+        </div>
+        <!-- <div class="section left">
             <img src="images/QuadPicture.jpg">
             <div class="text">
                 <h2>Education</h2>
@@ -188,16 +314,16 @@
                     </div>
             </div>
             
-        </div>
+        </div> -->
 
         
     
 
-        <div class="divider"></div>
+        <!-- <div class="divider"></div>
         <div class="button">
         <a href="index.html">
             Home
-        </a>
+        </a> -->
         </div>
         
     </body>
