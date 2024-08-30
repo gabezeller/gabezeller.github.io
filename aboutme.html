@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Me</title>
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
         <script>
 
         </script>
@@ -41,7 +42,7 @@
             
             }
             img {
-                width: 30%;
+                /* width: 30%; */
             } 
             .section {
                 color: white;
@@ -155,6 +156,11 @@
                 margin-bottom: 40px;
                 text-decoration: none;
             }
+            /* .mySlides {display:none}
+            .w3-left, .w3-right, .w3-badge {cursor:pointer}
+            .w3-badge {height:13px;width:13px;padding:0}
+            .w3-display-container {
+            } */
 
        </style>
     </head>
@@ -197,6 +203,7 @@
                     <li>GGIS379 - Intro to Geographic Information Systems</li>
                     
                 </ul>
+                <img src="images/QuadPicture.jpg">
                 <!-- <p>
                     While my precise career goals are yet to be defined, I find satisfaction in working
                      with data through programming and plan to further explore this area. I'm on track to complete my degree in the Fall of 2025.
@@ -214,6 +221,7 @@
                     <p>Serving as Social Director is fun, but I take pride in ensuring the chapter's success as an executive board member, leading
                         7 social chairs, and creating new funs events for our chapter. 
                     </p>
+                    <img src="images/floatpic.jpg">
                     <!-- <p> I have held numerous positions in the house including Float chair, where I tapped into my creativity to design and 
                         build our float for the UIUC 2022 Homecoming parade, which featured a Stranger Things theme and a live band with music
                         from the show. I have also served as Homecoming chair which put me in charge of planning and executing all homecoming 
@@ -241,8 +249,12 @@
                     Slipknot, Deftones, Knocked Loose, and Lorna Shore. 
                 </p>
 
+                <img src="images/knockedloose.JPG">
+
                 <p>In addition to my love for music, I also find joy in longboarding, especially around campus, exploring 
                     fashion through thrifting, spending time outdoors, and playing pool &#8212 even though I am not very good.</p>
+
+                <img src="images/alleypic.JPEG">
             </div>
         </div>
         <!-- <div class="section left">
@@ -325,6 +337,47 @@
             Home
         </a> -->
         </div>
-        
+
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " w3-white";
+            }
+        </script>
     </body>
+    <!-- <div class="w3-content w3-display-container" style="max-width:60%">
+        <img class="mySlides" src="images/codePic.png" style="width:100%">
+        <img class="mySlides" src="images/knockedloose.JPG" style="width:100%">
+        <img class="mySlides" src="images/floatpic.jpg" style="width:100%">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        </div> -->
+    </div>
     </html>
